@@ -1,0 +1,194 @@
+/* ===============================
+   FILTER
+================================ */
+.jadwal-filter {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.jadwal-filter input,
+.jadwal-filter select {
+    padding: 9px 12px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    font-size: 13px;
+    outline: none;
+}
+
+.jadwal-filter input:focus,
+.jadwal-filter select:focus {
+    border-color: var(--primary);
+}
+
+/* ===============================
+   TABLE
+================================ */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.table thead th {
+    background: #f9fafb;
+    text-align: left;
+    padding: 12px;
+    font-weight: 600;
+    color: #374151;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.table tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #f1f5f9;
+    vertical-align: middle;
+}
+
+.table tbody tr:hover {
+    background: #f8fafc;
+}
+
+/* ===============================
+   BADGE STATUS
+================================ */
+.badge {
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.badge.pending {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.badge.confirmed {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.badge.selesai {
+    background: #e5e7eb;
+    color: #374151;
+}
+
+.badge.cancelled {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+/* ===============================
+   AKSI
+================================ */
+.aksi {
+    text-align: center;
+}
+
+.btn-edit {
+    background: #cad2ce;
+    color: #000000;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: 0.2s;
+}
+
+.btn-edit:hover {
+    background: #989ca4;
+    color: #ffffff;
+}
+
+/* ===============================
+   PAGINATION ADMIN (FINAL FIX)
+================================ */
+
+.table-footer {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+/* PAGINATION ADMIN FIXED */
+.pagination-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    font-size: 13px;
+}
+
+.pagination-info {
+    color: #6b7280;
+}
+
+.pagination {
+    display: flex;
+    gap: 6px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pagination li a,
+.pagination li span {
+    min-width: 34px;
+    height: 34px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+    border: 1px solid #d1fae5;
+    background: #ecfdf5;
+    color: #047857;
+
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+
+    transition: all .2s ease;
+}
+
+/* HOVER (IN / OUT) */
+.pagination li a:hover {
+    background: #10b981;
+    color: #ffffff;
+    border-color: #10b981;
+    transform: translateY(-1px);
+}
+
+/* ACTIVE PAGE (1 / 2 / 3) */
+.pagination .active span {
+    background: #1b7a3c;
+    color: #ffffff;
+    border-color: #047857;
+    font-weight: 600;
+    cursor: default;
+}
+
+/* DISABLED (Prev / Next) */
+.pagination .disabled span {
+    background: #f3f4f6;
+    color: #9ca3af;
+    border-color: #e5e7eb;
+    cursor: not-allowed;
+}
+
+/* PREV / NEXT ICON */
+.pagination li:first-child a,
+.pagination li:last-child a {
+    font-size: 16px;
+    font-weight: bold;
+}

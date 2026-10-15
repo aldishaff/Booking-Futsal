@@ -1,0 +1,232 @@
+/* ====================================
+   USER INDEX PAGE
+==================================== */
+
+.user-index-page .page-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+/* ====================================
+   CARD
+==================================== */
+
+.user-index-page .user-card {
+    background: white;
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+}
+
+/* ====================================
+   SEARCH
+==================================== */
+
+.user-index-page .user-search-form {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    padding-bottom: 15px;
+}
+
+.user-index-page .user-search-input {
+    border: 1px solid #dbe2ea;
+    border-radius: 14px;
+    padding: 0 16px;
+    width: 320px;
+    height: 50px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.2s ease;
+    background: white;
+}
+
+.user-index-page .user-search-input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 4px rgba(37,99,235,0.1);
+}
+
+/* ====================================
+   TABLE
+==================================== */
+
+.user-index-page .user-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-index-page .user-table thead tr {
+    background: #f8fafc;
+}
+
+.user-index-page .user-table thead th {
+    padding: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #475569;
+    text-align: left;
+}
+
+.user-index-page .user-table tbody td {
+    padding: 16px;
+    border-top: 1px solid #f1f5f9;
+    color: #334155;
+    vertical-align: middle;
+}
+
+.user-index-page .user-table tbody tr:hover {
+    background: #f8fbff;
+}
+
+/* ====================================
+   USERNAME LINK
+==================================== */
+
+.user-index-page .user-link {
+    color: #0f172a;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.user-index-page .user-link:hover {
+    color: #2563eb;
+}
+
+/* ====================================
+   ACTION BUTTONS
+==================================== */
+
+.user-index-page .action-buttons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.user-index-page .action-buttons form {
+    margin: 0;
+    display: flex;
+}
+
+.user-index-page .btn-action {
+    border: none;
+    border-radius: 14px;
+    height: 48px;
+    padding: 0 14px;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    line-height: 1;
+    text-decoration: none;
+}
+
+/* SEARCH BUTTON */
+
+.user-index-page .btn-search {
+    background: #2563eb;
+    color: white;
+}
+
+.user-index-page .btn-search:hover {
+    background: #1d4ed8;
+}
+
+/* EDIT */
+
+.user-index-page .btn-edit {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.user-index-page .btn-edit:hover {
+    background: #bbf7d0;
+}
+
+/* DELETE */
+
+.user-index-page .btn-delete {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.user-index-page .btn-delete:hover {
+    background: #fecaca;
+}
+
+/* ====================================
+   CUSTOM PAGINATION
+==================================== */
+
+.user-index-page .custom-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 28px;
+}
+
+.user-index-page .pagination-link,
+.user-index-page .pagination-disabled {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: #ecfdf5;
+    border: 1px solid #bbf7d0;
+    color: #047857;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.user-index-page .pagination-link:hover {
+    background: #22c55e;
+    color: white;
+    border-color: #22c55e;
+}
+
+.user-index-page .pagination-link.active {
+    background: #15803d;
+    color: white;
+    border-color: #15803d;
+}
+
+.user-index-page .pagination-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* ====================================
+   EMPTY DATA
+==================================== */
+
+.user-index-page .empty-data {
+    text-align: center;
+    padding: 30px;
+    color: #94a3b8;
+}
+
+/* ====================================
+   RESPONSIVE
+==================================== */
+
+@media (max-width: 768px) {
+
+    .user-index-page .user-search-form {
+        flex-direction: column;
+    }
+
+    .user-index-page .user-search-input {
+        width: 100%;
+    }
+
+}

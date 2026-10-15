@@ -1,0 +1,109 @@
+/* ================= DATA LAPANGAN ================= */
+
+/* HEADER */
+.page-header h1 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.page-header p {
+    color: var(--gray);
+    margin-bottom: 25px;
+}
+
+/* CARD HEADER */
+.card-header.space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* TABLE */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.table th {
+    color: #6b7280;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.table tbody tr {
+    transition: background .15s ease;
+}
+
+.table tbody tr:hover {
+    background: rgba(0, 150, 136, 0.05); /* hijau soft */
+}
+
+.bold {
+    font-weight: 600;
+}
+
+/* IMAGE */
+.lapangan-img {
+    width: 120px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* AKSI */
+.aksi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-edit {
+    background: #d5ffdc;
+    color: #24b91c;
+    margin-top: 15px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    text-decoration: none;
+    transition: all .2s ease;
+}
+
+.btn-edit:hover {
+    background: #44ef4f;
+    color: #ffffff;
+}
+
+.btn-delete {
+    background: #fee2e2;
+    color: #b91c1c;
+    margin-top: 15px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    text-decoration: none;
+    transition: all .2s ease;
+    border: none;
+}
+
+.btn-delete:hover {
+    background: #ef4444;
+    color: #fff;
+}
+
+/* FOOTER TABLE */
+.table-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    color: var(--gray);
+}
+
+.aksi form {
+    margin: 0;
+}

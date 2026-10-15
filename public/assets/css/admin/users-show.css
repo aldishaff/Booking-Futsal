@@ -1,0 +1,277 @@
+/* ====================================
+   USER SHOW PAGE
+==================================== */
+
+.user-show-page {
+    padding-bottom: 30px;
+}
+
+/* ====================================
+   HEADER
+==================================== */
+
+.user-show-page .show-header {
+    margin-bottom: 28px;
+}
+
+.user-show-page .page-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 14px;
+    line-height: 1.2;
+}
+
+/* ====================================
+   BACK BUTTON
+==================================== */
+
+.user-show-page .btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #64748b;
+    color: white;
+    border-radius: 12px;
+    padding: 11px 18px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.user-show-page .btn-back:hover {
+    background: #475569;
+    color: white;
+}
+
+/* ====================================
+   TOP SECTION
+==================================== */
+
+.user-show-page .top-section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 28px;
+}
+
+/* ====================================
+   PROFILE CARD
+==================================== */
+
+.user-show-page .profile-card {
+    background: white;
+    border-radius: 24px;
+    padding: 32px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+}
+
+.user-show-page .profile-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.user-show-page .profile-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #f1f5f9;
+    flex-shrink: 0;
+}
+
+.user-show-page .profile-info h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 14px;
+}
+
+.user-show-page .profile-info p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: #64748b;
+    font-size: 16px;
+}
+
+.user-show-page .profile-info i {
+    width: 18px;
+}
+
+/* ====================================
+   STATISTICS
+==================================== */
+
+.user-show-page .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.user-show-page .stat-card {
+    background: white;
+    border-radius: 22px;
+    padding: 24px;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+    transition: 0.2s ease;
+}
+
+.user-show-page .stat-card:hover {
+    transform: translateY(-3px);
+}
+
+.user-show-page .stat-card h3 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #2563eb;
+    margin: 0;
+    line-height: 1;
+}
+
+.user-show-page .stat-card p {
+    margin: 0;
+    color: #64748b;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* ====================================
+   HISTORY CARD
+==================================== */
+
+.user-show-page .history-card {
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+}
+
+.user-show-page .history-header {
+    padding: 24px 28px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.user-show-page .history-header h5 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+/* ====================================
+   TABLE
+==================================== */
+
+.user-show-page .history-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-show-page .history-table thead tr {
+    background: #f8fafc;
+}
+
+.user-show-page .history-table thead th {
+    padding: 18px 20px;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 600;
+    color: #475569;
+}
+
+.user-show-page .history-table tbody td {
+    padding: 18px 20px;
+    border-top: 1px solid #f1f5f9;
+    color: #334155;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.user-show-page .history-table tbody tr:hover {
+    background: #f8fbff;
+}
+
+/* ====================================
+   STATUS BADGE
+==================================== */
+
+.user-show-page .status-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 95px;
+    height: 38px;
+    padding: 0 16px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* SUCCESS */
+
+.user-show-page .status-success {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+/* WARNING */
+
+.user-show-page .status-warning {
+    background: #fef3c7;
+    color: #ca8a04;
+}
+
+/* DANGER */
+
+.user-show-page .status-danger {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+/* ====================================
+   EMPTY DATA
+==================================== */
+
+.user-show-page .empty-data {
+    text-align: center;
+    padding: 32px;
+    color: #94a3b8;
+}
+
+/* ====================================
+   RESPONSIVE
+==================================== */
+
+@media (max-width: 1200px) {
+
+    .user-show-page .stat-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .user-show-page .profile-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .user-show-page .stat-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .user-show-page .history-table {
+        min-width: 900px;
+    }
+
+}

@@ -1,0 +1,150 @@
+/* ===============================
+   RIWAYAT DETAIL - REPORT STYLE
+================================ */
+.page-riwayat-detail .detail-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 32px 20px 60px;
+}
+
+/* BACK LINK */
+.page-riwayat-detail .back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #198754;
+    text-decoration: none;
+}
+
+/* CARD */
+.page-riwayat-detail .detail-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 32px;
+    border: 1px solid #e5e7eb;
+}
+
+/* HEADER */
+.page-riwayat-detail .detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.page-riwayat-detail .detail-header h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* STATUS (STAMP STYLE) */
+.page-riwayat-detail .status {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.page-riwayat-detail .status.pending {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.page-riwayat-detail .status.confirmed {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.page-riwayat-detail .status.cancelled {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+/* SECTION */
+.page-riwayat-detail .detail-section {
+    margin-bottom: 28px;
+}
+
+.page-riwayat-detail .detail-section h4 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 14px;
+    color: #111827;
+}
+
+/* KEY-VALUE ROW (LAPORAN) */
+.page-riwayat-detail .detail-section p {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 16px;
+
+    font-size: 14px;
+    padding: 8px 0;
+    margin: 0;
+
+    border-bottom: 1px dashed #e5e7eb;
+    color: #374151;
+}
+
+.page-riwayat-detail .detail-section p:last-child {
+    border-bottom: none;
+}
+
+.page-riwayat-detail .detail-section strong {
+    font-weight: 500;
+    color: #111827;
+}
+
+/* TOTAL HARGA */
+.page-riwayat-detail .detail-section.total {
+    background: #f9fafb;
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+}
+
+.page-riwayat-detail .detail-section.total p {
+    border: none;
+    font-size: 15px;
+}
+
+.page-riwayat-detail .detail-section.total strong {
+    font-weight: 600;
+}
+
+/* BUKTI TRANSFER */
+.page-riwayat-detail .detail-section a {
+    color: #198754;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* CATATAN */
+.page-riwayat-detail .detail-section.catatan p {
+    grid-template-columns: 1fr;
+    border: none;
+    background: #f9fafb;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 640px) {
+    .page-riwayat-detail .detail-section p {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+
+    .page-riwayat-detail .detail-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}

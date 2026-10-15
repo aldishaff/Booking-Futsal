@@ -1,0 +1,448 @@
+/* =========================
+   LAPORAN PAGE
+========================= */
+
+.laporan-container{
+    padding:24px;
+    background:#f5f7fb;
+    min-height:100vh;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.laporan-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:24px;
+}
+
+.page-title{
+    font-size:28px;
+    font-weight:700;
+    color:#111827;
+    margin-bottom:5px;
+}
+
+.page-subtitle{
+    color:#6b7280;
+    font-size:14px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.filter-card,
+.chart-card,
+.table-card{
+    background:#ffffff;
+    border-radius:18px;
+    padding:24px;
+    margin-bottom:24px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* =========================
+   FILTER
+========================= */
+
+.filter-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.form-group label{
+    margin-bottom:8px;
+    font-size:14px;
+    font-weight:600;
+    color:#374151;
+}
+
+.form-group input,
+.form-group select{
+    height:48px;
+    border:1px solid #d1d5db;
+    border-radius:12px;
+    padding:0 15px;
+    outline:none;
+    transition:0.3s;
+    font-size:14px;
+}
+
+.form-group input:focus,
+.form-group select:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 0 3px rgba(37,99,235,0.1);
+}
+
+.filter-button-group{
+    display:flex;
+    gap:12px;
+    margin-top:24px;
+}
+
+.btn-filter,
+.btn-reset{
+    border:none;
+    padding:12px 24px;
+    border-radius:12px;
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.btn-filter{
+    background:#2563eb;
+}
+
+.btn-filter:hover{
+    background:#1d4ed8;
+}
+
+.btn-reset{
+    background:#ef4444;
+}
+
+.btn-reset:hover{
+    background:#dc2626;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    margin-bottom:24px;
+}
+
+.stats-card{
+    background:#ffffff;
+    border-radius:18px;
+    padding:24px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.05);
+    position:relative;
+    overflow:hidden;
+}
+
+.stats-card::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:6px;
+    height:100%;
+    background:#2563eb;
+}
+
+.stats-card.income::before{
+    background:#16a34a;
+}
+
+.stats-card.success::before{
+    background:#0ea5e9;
+}
+
+.stats-card.pending::before{
+    background:#f59e0b;
+}
+
+.stats-card h4{
+    font-size:14px;
+    color:#6b7280;
+    margin-bottom:10px;
+}
+
+.stats-card h2{
+    font-size:30px;
+    font-weight:700;
+    color:#111827;
+}
+
+/* =========================
+   CHART GRID
+========================= */
+
+.chart-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    margin-bottom:24px;
+}
+
+.chart-card{
+    background:#ffffff;
+    border-radius:20px;
+    padding:24px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.05);
+    position:relative;
+    min-height:420px;
+}
+
+.card-header{
+    margin-bottom:20px;
+}
+
+.card-header h3{
+    font-size:20px;
+    font-weight:700;
+    color:#111827;
+}
+
+/* DOUGHNUT */
+#lapanganChart{
+    max-width:320px !important;
+    max-height:320px !important;
+    margin:auto;
+}
+
+/* LINE */
+#incomeChart{
+    width:100% !important;
+    height:320px !important;
+}
+
+/* =========================
+   EXPORT BUTTON
+========================= */
+
+.export-group{
+    display:flex;
+    gap:12px;
+    margin-bottom:24px;
+}
+
+.btn-export{
+    padding:12px 20px;
+    border-radius:12px;
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn-export:hover{
+    transform:translateY(-2px);
+}
+
+.btn-export.pdf{
+    background:#dc2626;
+}
+
+.btn-export.excel{
+    background:#16a34a;
+}
+
+.btn-export.csv{
+    background:#374151;
+}
+
+.btn-export.word{
+    background:#2563eb;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.table-card{
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table thead{
+    background:#f9fafb;
+}
+
+table th{
+    padding:16px;
+    text-align:left;
+    font-size:14px;
+    font-weight:700;
+    color:#374151;
+}
+
+table td{
+    padding:16px;
+    border-bottom:1px solid #f1f5f9;
+    font-size:14px;
+    color:#4b5563;
+}
+
+table tbody tr:hover{
+    background:#f8fafc;
+}
+
+/* =========================
+   STATUS
+========================= */
+
+.status{
+    padding:7px 14px;
+    border-radius:999px;
+    color:white;
+    font-size:12px;
+    font-weight:700;
+    display:inline-block;
+}
+
+/* CONFIRMED */
+.status.success,
+.status.confirmed{
+    background:#16a34a;
+}
+
+/* PENDING */
+.status.pending{
+    background:#f59e0b;
+}
+
+/* CANCEL */
+.status.cancel,
+.status.canceled,
+.status.cancelled,
+.status.failed,
+.status.expired{
+    background:#dc2626;
+}
+
+/* =========================
+   EMPTY DATA
+========================= */
+
+.empty-data{
+    text-align:center;
+    padding:40px !important;
+    color:#9ca3af;
+}
+
+/* =========================
+   PAGINATION
+========================= */
+
+.pagination-wrapper{
+    margin-top:24px;
+    display:flex;
+    justify-content:end;
+}
+
+/* =========================
+   PAGINATION
+========================= */
+
+.pagination-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+.pagination-info{
+    font-size:14px;
+    color:#6b7280;
+}
+
+.custom-pagination{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.pagination-btn,
+.pagination-active,
+.pagination-disabled{
+    min-width:40px;
+    height:40px;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+/* NORMAL */
+.pagination-btn{
+    background:#ecfdf5;
+    color:#047857;
+    border:1px solid #d1fae5;
+}
+
+.pagination-btn:hover{
+    background:#10b981;
+    color:white;
+}
+
+/* ACTIVE */
+.pagination-active{
+    background:#15803d;
+    color:white;
+}
+
+/* DISABLED */
+.pagination-disabled{
+    background:#f3f4f6;
+    color:#9ca3af;
+    cursor:not-allowed;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1200px){
+
+    .stats-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .filter-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:768px){
+
+    .stats-grid{
+        grid-template-columns:1fr;
+    }
+
+    .filter-grid{
+        grid-template-columns:1fr;
+    }
+
+    .export-group{
+        flex-wrap:wrap;
+    }
+
+    .laporan-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
+    }
+
+    .chart-card canvas{
+        max-width:100%;
+    }
+}

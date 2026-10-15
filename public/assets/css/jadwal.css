@@ -1,0 +1,118 @@
+.jadwal-section {
+    padding: 40px 6%;
+    background: #f2f2f2;
+}
+
+.jadwal-title {
+    margin-bottom: 16px;
+}
+
+.jadwal-filter {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.jadwal-filter select,
+.date-filter,
+.date-range {
+    padding: 8px 12px;
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.btn-search {
+    background: #2e5f3e;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+.jadwal-wrapper {
+    background: #fff;
+    padding: 16px;
+    border-radius: 12px;
+}
+
+.jadwal-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.jadwal-table th,
+.jadwal-table td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.jadwal-table th span {
+    font-size: 11px;
+    color: #888;
+}
+
+.jam {
+    font-weight: 600;
+}
+
+.slot {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.available {
+    background: #2e7d32;
+    color: #fff;
+}
+
+.booked {
+    background: #d32f2f;
+    color: #fff;
+}
+
+.finished {
+    background-color: #facc15;
+    color: #78350f;
+}
+
+.closed {
+    background: #ddd;
+    color: #777;
+}
+
+.jadwal-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.legend span {
+    margin-right: 14px;
+    font-size: 13px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.dot.green { background: #2e7d32; }
+.dot.red   { background: #d32f2f; }
+.dot.gray  { background: #aaa; }
+.dot.dark  { background: #facc15; }
+
+.btn-booking {
+    background: #2e5f3e;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+}

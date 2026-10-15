@@ -1,0 +1,58 @@
+.action-group{
+    display:flex;
+    gap:10px;
+    align-items:center;
+}
+
+.action-group form{
+    margin:0;
+}
+
+.action-btn{
+    width:38px;
+    height:38px;
+    border:none;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    transition:all .2s ease;
+    color:#fff;
+    font-size:14px;
+}
+
+.confirm-btn{
+    background:#16a34a;
+}
+
+.confirm-btn:hover{
+    background:#15803d;
+    transform:translateY(-2px);
+}
+
+.cancel-btn{
+    background:#dc2626;
+}
+
+.cancel-btn:hover{
+    background:#b91c1c;
+    transform:translateY(-2px);
+}
+
+.status-chip{
+    padding:8px 14px;
+    border-radius:999px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.status-chip.paid{
+    background:#dcfce7;
+    color:#166534;
+}
+
+.status-chip.failed{
+    background:#fee2e2;
+    color:#991b1b;
+}

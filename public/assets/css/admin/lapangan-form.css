@@ -1,0 +1,80 @@
+/* FORM GRID */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full {
+    grid-column: span 2;
+}
+
+.form-group label {
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-group small {
+    color: #6b7280;
+    margin-top: 5px;
+}
+
+/* ACTION */
+.form-action {
+    grid-column: span 2;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/* ACTION */
+.form-action {
+    grid-column: span 2;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.form-action .btn {
+    background: #1b7a3c;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    box-shadow: none;        /* ⛔ hapus shadow */
+    cursor: pointer;
+    font-weight: 500;
+    transition: background .2s ease;
+}
+
+.form-action .btn:hover {
+    background: #114c25;
+}
+
+.btn-secondary {
+    background: #e5e7eb;
+    color: #111827;
+    padding: 10px 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background .2s ease, color .2s ease;
+}
+
+.btn-secondary:hover {
+    background: #b6babf;
+    color: #111827;
+}

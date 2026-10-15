@@ -1,0 +1,198 @@
+/* =========================
+   FILTER
+========================= */
+.jadwal-filter {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.jadwal-filter select,
+.jadwal-filter input[type="date"] {
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* =========================
+   TABLE WRAPPER
+========================= */
+.table-wrapper {
+    width: 100%;
+    max-width: 100%;
+
+    max-height: 600px;
+
+    overflow-y: auto;
+    overflow-x: auto;
+
+    border-radius: 14px;
+}
+
+/* =========================
+   TABLE
+========================= */
+.jadwal-admin-table {
+    width: 100%;
+    min-width: 700px;
+
+    border-collapse: collapse;
+    font-family: 'Poppins', sans-serif;
+
+    table-layout: fixed;
+}
+
+.jadwal-admin-table thead th {
+    position: sticky;
+    top: 0;
+    background: #f1f5f9;
+    z-index: 10;
+    padding: 14px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.jadwal-admin-table tbody td {
+    padding: 14px;
+    font-size: 14px;
+    border-bottom: 1px solid #e5e7eb;
+    vertical-align: middle;
+}
+
+.jadwal-admin-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+/* =========================
+   JAM COLUMN
+========================= */
+.jam {
+    font-weight: 600;
+    color: #374151;
+    width: 180px;
+}
+
+/* =========================
+   BADGE STATUS
+========================= */
+.badge {
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.badge.tersedia {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.badge.tutup {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.badge.dibooking {
+    background: #ffedd5;
+    color: #9a3412;
+}
+
+/* =========================
+   RADIO GROUP
+========================= */
+.radio-group {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-start;
+}
+
+/* RADIO BASE */
+.radio {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.radio input {
+    display: none;
+}
+
+/* RADIO BUTTON LOOK */
+.radio span {
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all .2s ease;
+    border: 1px solid transparent;
+}
+
+/* TERSEDIA */
+.radio.tersedia span {
+    background: #ecfdf5;
+    color: #065f46;
+    border-color: #10b981;
+}
+
+.radio.tersedia input:checked + span {
+    background: #10b981;
+    color: #fff;
+}
+
+/* TUTUP */
+.radio.tutup span {
+    background: #fef2f2;
+    color: #7f1d1d;
+    border-color: #ef4444;
+}
+
+.radio.tutup input:checked + span {
+    background: #ef4444;
+    color: #fff;
+}
+
+/* DISABLED (UNTUK SLOT DIBOOKING NANTI) */
+.radio input:disabled + span {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+/* HOVER */
+.radio span:hover {
+    transform: scale(1.05);
+}
+
+/* =========================
+   FORM ACTION
+========================= */
+.form-action {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* =========================
+   BUTTON PRIMARY
+========================= */
+.btn-primary {
+    background: #166534;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 12px;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background .2s ease;
+}
+
+.btn-primary:hover {
+    background: #239c52;
+}

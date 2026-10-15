@@ -1,0 +1,124 @@
+/* ===============================
+   PROFILE LAYOUT
+================================ */
+.page-profile .profile-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 16px 60px;
+}
+
+.profile-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+/* GRID */
+.profile-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+/* CARD */
+.page-profile .profile-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+}
+
+.profile-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+/* FOTO */
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.profile-photo img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e5e7eb;
+}
+
+/* FORM */
+.profile-card label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 6px;
+    margin-top: 12px;
+    color: #374151;
+}
+
+.profile-card input[type="text"],
+.profile-card input[type="email"],
+.profile-card input[type="password"],
+.profile-card input[type="file"] {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+}
+
+/* BUTTON */
+.page-profile .btn-primary {
+    margin-top: 18px;
+    width: 100%;
+    background: #198754;
+    color: #ffffff;
+
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: none;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.page-profile .btn-primary:hover {
+    background: #157347;
+}
+
+.page-profile .btn-primary:active {
+    transform: scale(0.98);
+}
+
+/* ===============================
+   PASSWORD CARD FIX
+================================ */
+.page-profile .password-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-profile .password-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.page-profile .btn-password {
+    margin-top: auto; /* 🔥 INI YANG BIKIN KE BAWAH */
+}
+
+
+/* ===============================
+   RESPONSIVE (MOBILE)
+================================ */
+@media (max-width: 768px) {
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+}
